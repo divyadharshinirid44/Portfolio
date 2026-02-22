@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f0c29;
+    color: #fff;
+}
+
+/* NAVBAR */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(15,12,41,0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #a855f7;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    padding: 120px 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+}
+
+.hero-content h1 span {
+    color: #a855f7;
+}
+
+.hero-content h2 {
+    margin: 15px 0;
+    color: #c4b5fd;
+}
+
+.hero-content p {
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 26px;
+    background: #a855f7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* ROUND IMAGE */
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid rgba(255,255,255,0.2);
+}
+
+/* COMMON SECTIONS */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.dark {
+    background: #111827;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.center-text {
+    max-width: 700px;
+    margin: auto;
+    color: #ddd;
+}
+
+/* GRID + CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #1f2933;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+
+    .nav {
+        display: none;
+    }
+}
